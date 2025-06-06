@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrisWorld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Logo-Tris-world.png">
+    <style>
+        /* Reset e Stile Generale */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            color: white;
+        }
+        /* Sfondo */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(170deg, #f1c40f, #ffa500);
+            background-image: url('index_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        /* Overlay Scuro */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 15, 15, 0.45);
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Titolo */
+        h1 {
+            font-size: 50px;
+            text-shadow: 2px 2px 5px black;
+        }
+        /* Lista dei giochi */
+        .project__list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .project__item {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .project__link {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .project__link:hover {
+            color: #ffeb3b;
+        }
+        /* Pulsante Vai al Tris */
+        .tris-button {
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            background: #ffa500;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .tris-button:hover {
+            background: #e69500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="overlay">
+        <h1>TrisWorld</h1>
+        <ul class="project__list">
+            <li class="project__item">
+                <span>🎮 Minigames</span>
+                <ul class="project__list">
+                    <li class="project__item"><a href="games/normaltris/trisnormal.html" class="project__link">Tris Normal</a></li>
+                    <li class="project__item"><a href="games/halloweentris/halloween.html" class="project__link">Halloween Tris</a></li>
+                    <li class="project__item"><a href="games/christmastris/christmas.html" class="project__link">Christmas Tris</a></li>
+                    <li class="project__item"><a href="games/easter/easter.html" class="project__link">Easter Tris</a></li>
+                    <li class="project__item"><a href="games/summer/summer.html" class="project__link">Summer Tris</a></li>
+                </ul>
+            </li>
+            <li class="project__item">
+                <span>⚙️ Extra</span>
+                <ul class="project__list">
+                    <li class="project__item"><a href="segnalazioni.html" class="project__link">Segnalazioni o Problemi</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+
+</body>
+</html>
